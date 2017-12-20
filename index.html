@@ -2,21 +2,35 @@
 <html>
 
 <head>
-  <title>Quiz</title>
+  <title>SKT Quiz</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <h1>QUIZ</h1>
+  <h1>SKT QUIZ</h1>
 
-  <div id="slide1">
-    <p>Question?</p>
-    <input type="radio" name="option" value="A"> Option A <br>
-    <input type="radio" name="option" value="B"> Option B <br>
-    <input type="radio" name="option" value="C"> Option C <br>
-    <input type="radio" name="option" value="D"> Option D <br>
+  <div id="question1">
+    <p>Who is the famed SK Telecom T1 midlaner pictured below?</p>
+    <img src="images/faker.jpg" width="700" height="525"> <br>
+    <input type="radio" name="option" value="A"> Lee "Faker" Sang-hyeok <br>
+    <input type="radio" name="option" value="B"> Han "Peanut" Wang-ho <br>
+    <input type="radio" name="option" value="C"> Kang "Blank" Sun-gu <br>
+    <input type="radio" name="option" value="D"> Bae "Bang" Jun-sik <br>
   </div>
+
+  <div id="question2">
+    <p>Who is the SK Telecom strategic coach?</p>
+    <img src="images/kkoma.jpg" width="700" height="525"> <br>
+    <select>
+      <option>--Select an option--</option>
+      <option value="Reapered">Bok "Reapered" Han-gyu</option>
+      <option value="Rapidstar">Jung "RapidStar" Min-sung</option>
+      <option value="kkOma">Kim "kkOma" Jung-gyun</option>
+      <option value="Ssong">Kim “Ssong” Sang-soo</option>
+    </select>
+  </div>
+
 
   <div><button id="prev">Prev</button> <button id="next">Next</button></div>
 
