@@ -27,5 +27,8 @@ function prevQuestion() {
 }
 
 function markQuiz() {
-  let
+  let answer3 = $("#answer3").val();
+  if (answer3 == 3) {
+    
+  }
 }
