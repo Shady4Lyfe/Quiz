@@ -27,9 +27,11 @@ function prevQuestion() {
 }
 
 function markQuiz() {
-  let answer1 = $("")
+  
   let answer2 = $("#answer2").val();
   if (answer2 == "kkOma") {
   }
+  
+  if ()
   
 }
