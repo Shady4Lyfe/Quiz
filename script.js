@@ -1,8 +1,10 @@
 let questionNum = 1;
+let score = 0;
 
 $("#next").click(nextQuestion);
 $("#prev").click(prevQuestion);
 $("#mark").click(markQuiz);
+$("#2016").click(button2016);
 
 function nextQuestion() {
   $("#question" + questionNum).hide();
@@ -31,36 +33,29 @@ function markQuiz() {
   let answer2 = $("#answer2").val();
   let answer3 = $("#answer3").val();
   let answer4 = $("#answer4").val();
-  let answer5 = $("#answer4").val();
 
   if (answer1 == "C") {
-    alert("true")
-  } else {
-    alert("false")
+    score++;
   }
 
   if (answer2 == "kkOma") {
-    alert("yes")
-  } else {
-    alert("no")
+    score++;
   }
 
   if (answer3 == "3") {
-    alert("correct")
-  } else {
-    alert("nein")
+    score++;
   }
 
   if (answer4 == "samsung galaxy" || answer4 == "Samsung Galaxy" || answer4 == "SSG" || answer4 == "ssg") {
-    alert(1)
-  } else {
-    alert(2)
+    score++;
   }
+
+  alert("Your score is " + score + " out of 5 or " + score / 5 * 100 + "%");
+  score = 0;
   
-  if (answer5 == "5") {
-    alert("correct")
-  } else {
-    alert("nein")
-  }
+
+}
+
+function button2016() {
   
 }

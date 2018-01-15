@@ -1,3 +1,33 @@
-#question2, #question3, #question4, #question5{
+body {
+ text-align: center;
+}
+
+#question2,
+#question3,
+#question4,
+#question5 {
   display: none;
+}
+
+#prev, #next, #mark{
+  margin-top: 20px;
+
+}
+
+#b1,
+#b2,
+#b3,
+#b4 {
+  background-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: midnightblue;
+  font-family: "Verdana";
+}
+
+#b1:hover,
+#b2:hover,
+#b3:hover,
+#b4:hover {
+  background-color: lightgray;
 }
