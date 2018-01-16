@@ -4,7 +4,10 @@ let score = 0;
 $("#next").click(nextQuestion);
 $("#prev").click(prevQuestion);
 $("#mark").click(markQuiz);
-$("#2016").click(button2016);
+$("#b1").click(button2016);
+$("#b2").click(button2013);
+$("#b3").click(button2017);
+$("#b4").click(button2015);
 
 function nextQuestion() {
   $("#question" + questionNum).hide();
@@ -50,12 +53,36 @@ function markQuiz() {
     score++;
   }
 
+  if ($("#b1").is(':visible')) {
+    score++;
+  }
+
   alert("Your score is " + score + " out of 5 or " + score / 5 * 100 + "%");
   score = 0;
-  
+
 
 }
 
 function button2016() {
-  
+  $("#b2").hide('fast');
+  $("#b3").hide('fast');
+  $("#b4").hide('fast');
+}
+
+function button2013() {
+  $("#b1").hide('fast');
+  $("#b3").hide('fast');
+  $("#b4").hide('fast');
+}
+
+function button2017() {
+  $("#b1").hide('fast');
+  $("#b2").hide('fast');
+  $("#b4").hide('fast');
+}
+
+function button2015() {
+  $("#b1").hide('fast');
+  $("#b2").hide('fast');
+  $("#b3").hide('fast');
 }
