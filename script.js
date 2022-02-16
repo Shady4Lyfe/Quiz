@@ -38,27 +38,32 @@ function markQuiz() {
   let answer4 = $("#answer4").val();
 
   if (answer1 == "C") {
+    $("#question1").css("background-color", "limegreen");
     score++;
+  } else {
+    $("#question1").css("background-color", "red");
   }
 
   if (answer2 == "kkOma") {
+    $("#question2").css("background-color", "limegreen");
     score++;
+  } else {
+    $("#question2").css("background-color", "red");
   }
 
   if (answer3 == "3") {
+    $("#question3").css("background-color", "limegreen");
     score++;
+  } else {
+    $("#question3").css("background-color", "red");
   }
 
   if (answer4 == "samsung galaxy" || answer4 == "Samsung Galaxy" || answer4 == "SSG" || answer4 == "ssg") {
+    $("#question4").css("background-color", "limegreen");
     score++;
+  } else {
+    $("#question4").css("background-color", "red");
   }
-
-  if ($("#b1").is(':visible')) {
-    score++;
-  }
-
-  alert("Your score is " + score + " out of 5 or " + score / 5 * 100 + "%");
-  score = 0;
 
 
 }
